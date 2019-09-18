@@ -1,0 +1,16 @@
+image: node:11.15.0
+
+cache:
+  paths:
+    - node_modules/
+
+stages:
+  - test
+  - build
+
+test:
+  stage: test
+  script: 
+    - npm install
+    - cd client && npm install
+    - npm run build
