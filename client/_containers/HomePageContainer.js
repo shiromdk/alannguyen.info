@@ -8,8 +8,8 @@ class HomePageContainer extends Component {
 
     render(){
         return(
-            <div>
-                Hello
+            <div className="homepage">
+               <h1>Hello</h1>
             </div>
         );
     }

@@ -9,7 +9,7 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx'],
   },
-  entry: ['./client/index.js'],
+  entry: ['./client/index.js', './client/_styles/app.scss'],
   module: {
     rules: [
       {
