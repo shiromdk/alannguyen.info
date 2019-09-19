@@ -26,7 +26,7 @@ build:
     - mkdir -p ~/.ssh
     - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
   script:
-    - ssh shiromdk@alannguyen.info
+    - ssh alannguyen.info
     - cd alannguyen.info  
     - npm install
     - cd client && npm run build
