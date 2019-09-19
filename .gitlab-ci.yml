@@ -14,3 +14,12 @@ test:
     - npm install
     - cd client
     - npm run build
+
+build:
+  stage: build
+  script:
+    - echo "$PASSWORD" | ssh shiromdk@alannguyen.info --password-stdin
+    - cd alannguyen.info  
+    - npm install
+    - cd client && npm run build
+    - pm2 restart 0
