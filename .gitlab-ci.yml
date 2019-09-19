@@ -20,7 +20,7 @@ build:
 
 
   script:
-    - cat $SSH_PRIVATE_KEY >> key.pem
+    - echo $SSH_PRIVATE_KEY >> key.pem
     - chmod 400 key.pem
     - ssh -i key.pem shiromdk@alannguyen.info
     - cd alannguyen.info  
