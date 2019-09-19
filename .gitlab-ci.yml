@@ -6,28 +6,23 @@ cache:
 
 stages:
   - test
-  - build
 
-test:
-  stage: test
-  script: 
-    - npm install
-    - cd client
-    - npm run build
+# test:
+#   stage: test
+#   script: 
+#     - npm install
+#     - cd client
+#     - npm run build
 
 build:
-  stage: build
+  stage: test
   before_script:
-    - apt-get update -qq
-    - apt-get install -qq git
-    - 'which ssh-agent || ( apt-get install -qq openssh-client )'
-    - eval $(ssh-agent -s)
-    - ssh-add <(echo "$SSH_PRIVATE_KEY")
-    - mkdir -p ~/.ssh
-    - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+
+
   script:
-    - ssh alannguyen.info
-    - cd alannguyen.info  
-    - npm install
-    - cd client && npm run build
-    - pm2 restart 0
+    - echo $SSH_PRIVATE_KEY
+    # - ssh shiromdk@alannguyen.info
+    # - cd alannguyen.info  
+    # - npm install
+    # - cd client && npm run build
+    # - pm2 restart 0
