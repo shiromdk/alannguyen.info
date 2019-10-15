@@ -16,14 +16,14 @@ class App extends Component {
   
   render() {
     return (
-      <div>
+        
         <Router history={history}>
-          <div>
-          
+
+         
             <Route exact path="/" component={HomePageContainer} />
-          </div>
+    
         </Router>
-      </div>
+
     );
   }
 }

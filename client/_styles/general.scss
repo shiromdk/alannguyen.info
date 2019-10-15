@@ -1,13 +1,31 @@
-html, body {
+html, body, #app {
     color: $text-color;
     background-color: $body-bg;
-}
 
+}
+body{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+#app{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 h1,h2,h3,h4,h5,h6{
     color: $heading-color;
     font-family: 'Merriweather', serif;
 }
 
-p{
+p,a{
     font-family: 'Inconsolata', monospace;
+}
+
+@media only screen and (max-width : 1024px) and (orientation : portrait) {
+    #app{
+        align-items: flex-start
+    }
 }

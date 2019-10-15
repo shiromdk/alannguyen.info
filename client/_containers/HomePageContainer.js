@@ -3,7 +3,7 @@ import React, { Component } from "react"
 import { fadeIn } from 'react-animations'
 
 import styled, { keyframes } from 'styled-components';
-
+import NavigationComponent from '../_components/general/NavigationComponent'
 
 const fadeAnimation = keyframes`${fadeIn}`;
 
@@ -20,8 +20,9 @@ class HomePageContainer extends Component {
         return(
             <div className="homepage">
                 <FadeDiv>
-               <h1>Hello</h1>
-                <p>world</p>
+                <NavigationComponent />
+                <h1>Alan Nguyen</h1>
+                <p>Full Stack Developer</p>
                 </FadeDiv>
             </div>
         );
