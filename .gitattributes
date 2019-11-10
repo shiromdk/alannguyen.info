@@ -1,0 +1,2 @@
+assets/unity/Build/webg.data.unityweb filter=lfs diff=lfs merge=lfs -text
+*.unityweb merge=unityyamlmerge eol=lf
