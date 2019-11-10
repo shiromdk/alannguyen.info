@@ -17,8 +17,8 @@ class ProjectsPageContainer extends Component {
         super(props);
 
         this.unityContent = new UnityContent(
-            "assets/unity/Build/WebGlBuild.json",
-            "assets/unity/Build/UnityLoader.js"
+            "unity/Build/WebGlBuild.json",
+            "unity/Build/UnityLoader.js"
         )
     }
 
