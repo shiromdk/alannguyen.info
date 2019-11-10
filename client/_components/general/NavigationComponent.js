@@ -37,8 +37,10 @@ export default class Navigation extends Component {
               <Link to="/">Gallery</Link>
             </li>
             <li>
-              <Link to="/">Projects</Link>
-            </li> */}
+            */}
+            <li>
+              <Link to="/projects">Projects</Link>
+            </li> 
             <li>
               <Link to="/">Contact </Link>
             </li>

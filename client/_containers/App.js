@@ -6,6 +6,7 @@ import { history } from "../_helpers";
 import HomePageContainer from "../_containers/HomePageContainer";
 
 import { Container } from '@material-ui/core'
+import ProjectsPageContainer from "./ProjectsPageContainer";
 // Import Components
 
 class App extends Component {
@@ -19,9 +20,10 @@ class App extends Component {
         
         <Router history={history}>
 
-         
+         <div>
             <Route exact path="/" component={HomePageContainer} />
-    
+            <Route exact path="/projects" component={ProjectsPageContainer} />
+            </div>
         </Router>
 
     );

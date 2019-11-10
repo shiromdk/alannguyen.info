@@ -60,7 +60,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './client/index.html',
     }),
-    new CopyWebpackPlugin([{ from: 'assets/images', to: 'images' }]),
+    new CopyWebpackPlugin([{ from: 'assets', to: '' }]),
   ],
   devServer: {
     historyApiFallback: true,
