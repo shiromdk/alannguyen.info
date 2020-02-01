@@ -60,7 +60,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './client/index.html',
     }),
-    new CopyWebpackPlugin([{ from: 'assets', to: '' }]),
+    // new CopyWebpackPlugin([{ from: 'assets', to: '' }]),
   ],
   devServer: {
     historyApiFallback: true,
@@ -69,7 +69,7 @@ module.exports = {
   externals: {
     // global app config object
     config: JSON.stringify({
-      apiUrl: 'https://api.fivewaysofleading.com.au',
+      apiUrl: 'https://',
     }),
   },
 }
