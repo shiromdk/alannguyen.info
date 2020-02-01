@@ -7,6 +7,7 @@ import HomePageContainer from "../_containers/HomePageContainer";
 
 import { Container } from '@material-ui/core'
 import ProjectsPageContainer from "./ProjectsPageContainer";
+import AboutPageContainer from './AboutPageContainer';
 // Import Components
 
 class App extends Component {
@@ -20,8 +21,9 @@ class App extends Component {
         
         <Router history={history}>
 
-         <div>
+         <div className="routeWrapper">
             <Route exact path="/" component={HomePageContainer} />
+            <Route exact path="/about" component={AboutPageContainer} />
             <Route exact path="/projects" component={ProjectsPageContainer} />
             </div>
         </Router>
