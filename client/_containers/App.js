@@ -24,7 +24,7 @@ class App extends Component {
          <div className="routeWrapper">
             <Route exact path="/" component={HomePageContainer} />
             <Route exact path="/about" component={AboutPageContainer} />
-            <Route exact path="/projects" component={ProjectsPageContainer} />
+            {/* <Route exact path="/projects" component={ProjectsPageContainer} /> */}
             </div>
         </Router>
 

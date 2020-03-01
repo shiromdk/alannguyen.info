@@ -16,10 +16,6 @@ class ProjectsPageContainer extends Component {
     constructor(props) {
         super(props);
 
-        this.unityContent = new UnityContent(
-            "unity/Build/webg.json",
-            "unity/Build/UnityLoader.js"
-        )
     }
 
  
@@ -30,9 +26,7 @@ class ProjectsPageContainer extends Component {
            
                 <NavigationComponent />
                 <h1>yep</h1>
-                <div className="unityWrapper">
-                <Unity unityContent={this.unityContent} />
-                </div>
+               
             
             </div>
         );
