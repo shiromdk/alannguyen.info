@@ -21,10 +21,9 @@ class AboutPageContainer extends Component {
         return(
             <div className="homepage">
                  <NavigationComponent />
-                <FadeDiv>
+              <div>
                
-                wewewe
-                </FadeDiv>
+                wewewe</div>
             </div>
         );
     }

@@ -1,18 +1,10 @@
 
 import React, { Component } from "react"
-import { fadeIn } from 'react-animations'
-
-import styled, { keyframes } from 'styled-components';
 import NavigationComponent from '../_components/general/NavigationComponent'
 
 import { Avatar } from '@material-ui/core'
 import { Instagram, LinkedIn, Facebook } from '@material-ui/icons';
-const fadeAnimation = keyframes`${fadeIn}`;
 
-const FadeDiv = styled.div`
-    
-    animation: 1s ${fadeAnimation};
-    `;
 
 class HomePageContainer extends Component {
     constructor(props) {
@@ -23,8 +15,7 @@ class HomePageContainer extends Component {
         return(
             <div className="homepage">
                  <NavigationComponent />
-                <FadeDiv>
-               
+                <div>
                 <h1>Alan Nguyen</h1>
                 <p>Full Stack Developer</p>
                 <div classnName="social">
@@ -48,7 +39,8 @@ class HomePageContainer extends Component {
                         />
                     </a>
                 </div>
-                </FadeDiv>
+                </div>
+               
             </div>
         );
     }
